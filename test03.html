@@ -1,0 +1,22 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+</script>
+
+<div class="areaA" >
+    <iframe id="OurSite" class="SiteFrame" src="http://www.korotkin.co.il/"> </iframe>    
+</div>
+<div class="areaB" ng-app="sitesApp" ng-controller="siteListCtrl"> 
+    <form method="post">
+        <h4>Enter site:</h4>
+<input type="text" id="siteTextBox" ng-model="nameOfSite"></input>
+<input type="submit" id="siteButton" value="Go" ng-click="newSite()"></input>
+</form>
+
+<div class="container">
+     <h1>Responses:</h1>
+    <ul id="Responselist"></ul>
+</div>
+<div>
+<h4>Enter response:</h4>
+<input type="text" id="resTextbox" ></input>
+<input type="button" id="resButton" value="send" ></input>
+</div></div>
